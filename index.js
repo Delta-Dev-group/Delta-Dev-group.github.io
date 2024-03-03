@@ -17,11 +17,11 @@ document.getElementById("discordButton").onclick = function() {
 
 var mainContent = document.getElementById("mainContent");
 var delta_devContent = document.getElementById("delta_devContent");
-var jygttgyyContent = document.getElementById("jygttgyyContent");
+//var jygttgyyContent = document.getElementById("jygttgyyContent");
 document.getElementById("mainButton").onclick = function() {
 	console.log("mainButton: Clicked");
-	jygttgyyContent.style.opacity = 0;
-	wait(jygttgyyContent.style.display = "none", 400);
+	//jygttgyyContent.style.opacity = 0;
+	//wait(jygttgyyContent.style.display = "none", 400);
 	delta_devContent.style.opacity = 0;
 	wait(delta_devContent.style.display = "none", 400);
 	mainContent.style.opacity = 1;
@@ -31,12 +31,12 @@ document.getElementById("delta_devButton").onclick = function() {
 	console.log("delta_dev_Button: Clicked");
 	mainContent.style.opacity = 0;
 	wait(mainContent.style.display = "none", 400);
-	jygttgyyContent.style.opacity = 0;
-	wait(jygttgyyContent.style.display = "none", 400);
+	//jygttgyyContent.style.opacity = 0;
+	//wait(jygttgyyContent.style.display = "none", 400);
 	delta_devContent.style.opacity = 1;
 	wait(delta_devContent.style.display = "block", 400);
 }
-document.getElementById("jygttgyyButton").onclick = function() {
+/*document.getElementById("jygttgyyButton").onclick = function() {
 	console.log("jygttgyyButton: Clicked");
 	mainContent.style.opacity = 0;
 	wait(mainContent.style.display = "none", 400);
@@ -44,7 +44,7 @@ document.getElementById("jygttgyyButton").onclick = function() {
 	wait(delta_devContent.style.display = "none", 400);
 	jygttgyyContent.style.opacity = 1;
 	wait(jygttgyyContent.style.display = "block", 400);
-}
+}*/
 
 document.addEventListener("keydown", (event) => {
     if (event.isComposing || event.keyCode === 69) {
