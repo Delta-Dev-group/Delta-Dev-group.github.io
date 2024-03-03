@@ -1,0 +1,59 @@
+@keyframes Appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+body {
+    font-family: Verdana;
+    color: rgb(200, 200, 200);
+    text-shadow: 1px 1px rgb(30, 30, 30);
+    background-color: rgb(40, 40, 40);
+}
+.language {
+    background-color: rgb(70, 70, 70);
+    float: left;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tab {
+    overflow: auto;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 8px;
+    background-color: rgb(70, 70, 70);
+    animation-name: Appear;
+    animation-duration: 2s;
+}
+.tab button, .tab a {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+a {
+    color: rgb(0, 140, 200);
+    text-decoration: none;
+}
+
+.tab button:hover, .tab a:hover {
+    background-color: rgb(60, 60, 60);
+}
+.tab button.active {
+    background-color: rgb(55, 55, 55);
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    opacity: 0;
+    animation-name: Appear;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
